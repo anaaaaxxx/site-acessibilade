@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Turismo Sustentável</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo-turismo.png" alt="Logo Turismo Sustentável" class="nav-img" loading="lazy">
+
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sustentavel">Sustentabilidade</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">
+                    acessibilidade
+                </button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold"><i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-dark fst-italic fw-bold">Explore um Brasil</h1>
+                    <h1 class="display-4 text-success fst-italic fw-bold">mais sustentável</h1>
+                    <p class="lead">
+                        Descubra destinos brasileiros que preservam a natureza e promovem o turismo consciente.
+                    </p>
+                    <a href="#sustentavel" class="btn btn-success btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+
+                <div class="direita-imagem">
+                    <img src="img/banner-natureza.jpg" alt="Paisagem natural do Brasil" class="img-inicio rounded" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- SUSTENTABILIDADE -->
+        <section id="sustentavel" class="my-5 pt-6 secao-sustentavel" tabindex="0">
+            <div class="container d-flex flex-wrap align-items-center">
+
+                <div class="col-md-4 d-flex justify-content-center mb-3">
+                    <img src="img/turismo-sustentavel.jpg" alt="Turista observando natureza" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+
+                <div class="col-md-7">
+                    <h2>O que é Turismo Sustentável?</h2>
+                    <p class="p-2">
+                        Turismo sustentável é uma forma de viajar que busca reduzir impactos ambientais,
+                        valorizar culturas locais e preservar a biodiversidade. O objetivo é permitir que pessoas
+                        conheçam lugares incríveis sem prejudicar as gerações futuras.
+                    </p>
+
+                    <p class="p-2">
+                        No Brasil, diversos destinos adotam práticas responsáveis, como uso consciente de recursos,
+                        trilhas controladas, apoio a comunidades nativas e incentivo ao ecoturismo.
+                        Viajar de forma sustentável significa cuidar da natureza e ao mesmo tempo viver experiências únicas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERIA -->
+        <section id="galeria" tabindex="0" aria-label="Galeria de destinos sustentáveis" class="my-5">
+            <h2 class="text-center pt-5">Galeria de Destinos</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="img/bonito.jpg" alt="Bonito MS" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <img src="img/noronha.jpg" alt="Fernando de Noronha" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4 mb-4">
+                        <img src="img/jalapao.jpg" alt="Jalapão TO" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <img src="img/veadeiros.jpg" alt="Chapada dos Veadeiros" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="my-5">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+
+                    <h2 class="mb-3">Entre em contato</h2>
+
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-success btn-lg rounded-pill">
+                                Enviar mensagem
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p>Siga nossas redes:</p>
+        <i class="bi bi-whatsapp" aria-label="WhatsApp"></i>
+        <i class="bi bi-instagram" aria-label="Instagram"></i>
+        <i class="bi bi-tiktok" aria-label="TikTok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
